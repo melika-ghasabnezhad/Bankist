@@ -292,3 +292,246 @@
     font-weight: 600;
   }
   
+  @media (max-width: 750px){
+    
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 0.5rem;
+    }
+    
+    .welcome {
+      font-size: 1.5rem;
+      white-space: nowrap ;
+      font-weight: 500;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    
+    .logo {
+      height: 4.5rem;
+      padding-left: 20px;
+    }
+    
+    .login {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 1rem;
+      margin-top: 18px;
+    }
+    
+    .login__input {
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 1.3rem;
+      font-family: inherit;
+      text-align: center;
+      width:80%;
+      border-radius: 10rem;
+      margin-right: 1rem;
+      color: inherit;
+      border: 1px solid #fff;
+      transition: all 0.3s;
+    }
+    
+  
+    .login__btn {
+      border: none;
+      background: none;
+      font-size: 2rem;
+      color: inherit;
+      cursor: pointer;
+      transition: all 0.3s;
+      padding-right: 73px;
+    }
+    .app {
+      position: relative;
+      max-width: 100rem;
+      margin: 3.5rem auto;
+      display: grid;
+      grid-template-columns: 4fr 3fr;
+      grid-template-rows: auto repeat(3, 10rem) auto;
+      gap: 2rem;
+    
+      
+      opacity: 0;
+      transition: all 1s;
+    }
+    
+    .balance {
+      font-size: 20px;
+      gap: 10px;
+      grid-column: 1 / span 2;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+    }
+    
+    .balance__label {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+    .balance__date {
+      font-size: 1.2rem;
+      color: #888;
+    }
+    
+    .balance__value {
+      font-size: 3rem;
+      font-weight: 400;
+      margin-bottom: 3rem;
+    }
+    .movements {
+      grid-row: 2 / span 3;
+      background-color: #fff;
+      border-radius: 1rem;
+      overflow: scroll;
+      
+     
+    }
+    
+    .movements__row {
+      
+      padding: 1.3rem;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .movements__type {
+      
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: #fff;
+      padding: 0.3rem;
+      border-radius: 10rem;
+      margin-right: 2rem;
+    }
+    .movements__value {
+      font-size: 1.3rem;
+      margin-left: auto;
+    }
+    .summary {
+      
+        width: 80px;
+       
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        padding: 20px;
+        margin-top: 6rem;
+        
+      }
+    
+    .summary__label {
+      font-size: 1rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-right: 0.5rem;
+
+    }
+    
+    .summary__value {
+      font-size: 2rem;
+      margin-right: 2rem;
+    }
+    
+    .summary__value--in,
+    .summary__value--interest {
+      color: #66c873;
+    }
+    
+    .summary__value--out {
+      color: #f5465d;
+    }
+    
+    .btn--sort {
+      margin-left: auto;
+      border: none;
+      background: none;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .operation {
+      border-radius: 1rem;
+      padding: 2rem 2.5rem;
+      color: #333;
+    }
+    
+    .operation--transfer {
+      background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+    }
+    
+    .operation--loan {
+      background-image: linear-gradient(to top left, #39b385, #9be15d);
+    }
+    
+    .operation--close {
+      background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+    }
+    
+    h2 {
+      margin-bottom: 1.3rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #333;
+    }
+    
+    .form {
+      display: grid;
+      grid-template-columns: 2fr 2fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 0.4rem 1rem;
+    }
+    .form__input {
+      width: 100%;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.4);
+      font-family: inherit;
+      font-size: 1.3rem;
+      text-align: center;
+      color: #333;
+      padding: 0.3rem 0.5rem;
+      border-radius: 0.7rem;
+      transition: all 0.3s;
+    }
+    
+    .form__input:focus {
+      outline: none;
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+    
+    .form__label {
+      font-size: 1rem;
+      text-align: center;
+      white-space: nowrap;
+      font-weight: bolder;
+    }
+    
+    .form__btn {
+     
+      border: none;
+      border-radius: 0.7rem;
+      font-size: 1.8rem;
+      background-color: #fff;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .logout-timer {
+      padding: 0 0.2rem;
+      margin-top: 1.9rem;
+      text-align: right;
+      font-size: 1rem;
+    }
+    
+    .timer {
+      font-weight: 600;
+    }
+  }
